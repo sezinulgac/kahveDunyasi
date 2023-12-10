@@ -32,13 +32,13 @@
         <!-- Dropdown menu content -->
         <div v-if="item === 'KAHVE'" class="dropdown-content">
           <!-- Add your dropdown menu items here -->
-          <a style="font-size: 12px;" href="#">TÜRK KAHVESİ</a>
-          <a href="#">FİLTRE KAHVE</a>
-          <a href="#">YÖRESEL KAHVE</a>
-          <a href="#">ESPRESSO</a>
-          <a href="#">HAZIR KAHVELER</a>
-          <a href="#">SALEP VE SICAK ÇİKOLATA</a>
-          <a href="#">ŞURUPLAR</a>
+          <a style="font-size: 12px; " href="https://www.kahvedunyasi.com/turk-kahvesi-c-3400"> <img src="../assets/images/turk_kahvesi.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> TÜRK KAHVESİ</a>
+          <a href="https://www.kahvedunyasi.com/filtre-kahve-c-3401"> <img src="../assets/images/filtre_kahve.svg" alt="" style="width: 50px; height: 50px; top: 1px;" > FİLTRE KAHVE</a>
+          <a href="https://www.kahvedunyasi.com/yoresel-kahve-c-3402"> <img src="../assets/images/yoresel_kahve.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> YÖRESEL KAHVE</a>
+          <a href="https://www.kahvedunyasi.com/espresso-c-3403"> <img src="../assets/images/espresso.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> ESPRESSO</a>
+          <a href="https://www.kahvedunyasi.com/hazir-kahveler-c-3404"> <img src="../assets/images/hazir_kahve.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> HAZIR KAHVELER</a>
+          <a href="https://www.kahvedunyasi.com/salep-ve-sicak-cikolata-c-3405"> <img src="../assets/images/sahlep_sicakcikolata.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> SALEP VE SICAK ÇİKOLATA</a>
+          <a href="https://www.kahvedunyasi.com/suruplar-c-3406"> <img src="../assets/images/surup.svg" alt="" style="width: 50px; height: 50px; top: 1px;"> ŞURUPLAR</a>
         </div>
       </div>
     </div>
@@ -248,7 +248,7 @@ export default {
   text-decoration: none;
   color: white; /* Text color for dropdown items */
   display: block;
-  background-color: #800000; /* Set background color to burgundy for all options */
+  background-color: #692121; /* Set background color to burgundy for all options */
   transition: background-color 0.3s;
 }
 
