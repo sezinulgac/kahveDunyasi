@@ -62,9 +62,10 @@
 
             <q-btn
               @click="showCaptcha"
-              color="negative"
+              color="positive"
               label="Ben robot değilim"
               icon="check_circle"
+              style="bottom: 24px;"
             ></q-btn>
           </q-form>
         </q-card-section>
