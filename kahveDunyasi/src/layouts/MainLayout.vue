@@ -44,31 +44,31 @@ import ComponentLink, {
 const componentLinks: ComponentLinkProps[] = [
   {
     title: 'Sepet',
-    caption: 'quasar.dev',
+    caption: 'Kahve Dünyası',
     icon: 'school',
     link: '/comp1',
   },
   {
     title: 'Giriş',
-    caption: 'github.com/quasarframework',
+    caption: 'Kahve Dünyası',
     icon: 'code',
     link: '/comp2',
   },
   {
     title: 'Menü',
-    caption: 'chat.quasar.dev',
+    caption: 'Kahve Dünyası',
     icon: 'chat',
     link: '/comp3',
   },
   {
     title: 'Kahve Çikolata Aksesuar',
-    caption: 'forum.quasar.dev',
+    caption: 'Kahve Dünyası',
     icon: 'record_voice_over',
     link: '/comp4',
   },
   {
     title: 'Kurumsal Hediyeler',
-    caption: '@quasarframework',
+    caption: 'Kahve Dünyası',
     icon: 'rss_feed',
     link: '/comp5',
   },
