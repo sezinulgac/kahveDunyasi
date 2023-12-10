@@ -55,23 +55,24 @@ const componentLinks: ComponentLinkProps[] = [
     link: '/comp2',
   },
   {
-    title: '3',
+    title: 'Menü',
     caption: 'chat.quasar.dev',
     icon: 'chat',
     link: '/comp3',
   },
   {
-    title: '4',
+    title: 'Kahve Çikolata Aksesuar',
     caption: 'forum.quasar.dev',
     icon: 'record_voice_over',
     link: '/comp4',
   },
   {
-    title: '5',
+    title: 'Kurumsal Hediyeler',
     caption: '@quasarframework',
     icon: 'rss_feed',
     link: '/comp5',
   },
+ 
 ];
 
 const leftDrawerOpen = ref(false);

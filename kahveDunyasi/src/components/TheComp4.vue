@@ -1,49 +1,86 @@
 <template>
-    <q-page class="row items-center justify-evenly">
-      <example-component
-        title="Example component 4"
-        active
-        :todos="todos"
-        :meta="meta"
-      ></example-component>
-      <q-card v-for="todo in todos" :key="todo.id" class="q-mb-md" style="width: 300px;">
-      <q-card-section>
-        <q-card-title>{{ todo.content }}
-        </q-card-title>
-      </q-card-section>
+  <div class="q-pa-md row items-start q-gutter-md justify center">
+    
+    <q-card class="my-card" @click="handleCardClick('coffee')">
+      <img src="../assets/images/coffee.jpg" class="card-image" title="Kahve">
+      <div class="text-subtitle2 absolute-top text-center" style="color: white; top: 50px; right: 50px; font-size: 20px; font-family: Gotham-Black, sans-serif;">
+         <img src="../assets/images/coffee.svg" style="width: 29px;" alt="">
+       <b> &nbsp; Kahve</b> 
+      </div>
     </q-card>
-    </q-page>
-  </template>
-  
-  <script setup lang="ts">
-  import { Todo, Meta } from 'components/models';
-  import ExampleComponent from 'components/ExampleComponent.vue';
-  import { ref } from 'vue';
-  
-  const todos = ref<Todo[]>([
-    {
-      id: 1,
-      content: 'ct1 4',
-    },
-    {
-      id: 2,
-      content: 'ct2 4',
-    },
-    {
-      id: 3,
-      content: 'ct3 4',
-    },
-    {
-      id: 4,
-      content: 'ct4 4',
-    },
-    {
-      id: 5,
-      content: 'ct5 4',
-    },
-  ]);
-  const meta = ref<Meta>({
-    totalCount: 1200,
-  });
-  </script>
-  
+
+    <q-card class="my-card" @click="handleCardClick('chocolate')">
+      <img src="../assets/images/chocolate.jpg" title="Çikolata">
+      <div class="text-subtitle2 absolute-top text-center" style="color: white; top: 50px; right: 50px; font-size: 20px; font-family: Gotham-Black, sans-serif;">
+         <img src="../assets/images/chocolate.svg" style="width: 29px;" alt="">
+       <b> &nbsp; Çikolata</b> 
+      </div>
+    </q-card>
+
+
+    <q-card class="my-card" @click="handleCardClick('accesory')">
+      <img src="../assets/images/accesory.jpg" title="Aksesuar">
+      <div class="text-subtitle2 absolute-top text-center" style="color: white; top: 50px; right: 50px; font-size: 20px; font-family: Gotham-Black, sans-serif;">
+         <img src="../assets/images/accesory.svg" style="width: 29px;" alt="">
+       <b> &nbsp; Aksesuar</b> 
+      </div>
+    </q-card>
+
+   
+
+    <q-card class="my-card" @click="handleCardClick('diet')">
+      <img src="../assets/images/diet.jpg" title="Fit Lezzetler">
+      <div class="text-subtitle2 absolute-top text-center" style="color: white; top: 50px; right: 50px; font-size: 20px; font-family: Gotham-Black, sans-serif;">
+         <img src="../assets/images/diet.svg" style="width: 29px;" alt="">
+       <b> &nbsp; Fit Lezzetler</b> 
+      </div>
+    </q-card>
+    
+    <q-card class="my-card" @click="handleCardClick('prom0')">
+      <img src="../assets/images/promo.jpg" title="Fırsatlar">
+      <div class="text-subtitle2 absolute-top text-center" style="color: white; top: 50px; right: 50px; font-size: 20px; font-family: Gotham-Black, sans-serif;">
+         <img src="../assets/images/promo.svg" style="width: 29px;" alt="">
+       <b> &nbsp; Fırsatlar</b> 
+      </div>
+    </q-card>
+
+    
+  </div>
+</template>
+
+<script>
+export default {
+  setup() {
+    const handleCardClick = (imageName) => {
+      // Tıklanan kartın işlemlerini burada gerçekleştirebilirsiniz
+      console.log(`Tıklanan kart: ${imageName}`);
+    };
+
+    return {
+      handleCardClick
+    };
+  }
+};
+</script>
+
+<style lang="sass" scoped>
+.my-card
+  width: 100%
+  max-width: 250px
+  cursor: pointer // Kartın fare işaretçisi değiştirme özelliği
+  margin:23px
+
+.card-image
+  width: 100%
+  height: auto
+
+.card-text
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.5)
+  color: white
+  padding: 8px
+  text-align: center
+</style>

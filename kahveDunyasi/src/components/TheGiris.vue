@@ -6,15 +6,15 @@
         <q-card-section>
           <div
             class="text-left"
-            style="margin-top: 30px; margin-bottom: -20px; margin-left: 34px"
+            style="margin-top: 30px; margin-bottom: -20px; "
           >
             <strong
               style="
                 font-family: Gotham-Medium, sans-serif;
                 font-size: 29.4px;
-                text-align: left;
+                left: 20px;
                 padding: 15px;
-                margin-top: 100px;
+                margin-top: 20px;
               "
             >
               Üye Girişi
@@ -80,7 +80,8 @@
               padding: 15px;
               font-size: 13px;
               color: #3596b5 !important;
-              margin-left: 34px;
+              margin-top: 10px;
+              margin-left: 14px;
             "
             >Parolanızı mı Unuttunuz?</router-link
           >
@@ -132,7 +133,7 @@ export default {
     };
   },
   methods: {
-    showCaptchaCaptcha() {
+    showCaptcha() {
       grecaptcha.ready(() => {
         grecaptcha
           .execute('6LcpNSopAAAAADPuw70ItFfdC3_gMJsQBAKe4cLN', {
@@ -180,3 +181,4 @@ export default {
   height: 501px;
 }
 </style>
+
