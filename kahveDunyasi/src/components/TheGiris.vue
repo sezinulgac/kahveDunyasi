@@ -4,15 +4,12 @@
     <q-container class="q-pa-md">
       <q-card class="q-ma-auto">
         <q-card-section>
-          <div
-            class="text-left"
-            style="margin-top: 30px; margin-bottom: -20px; "
-          >
+          <div class="text-left" style="margin-top: 20px; margin-bottom: -30px">
             <strong
               style="
                 font-family: Gotham-Medium, sans-serif;
                 font-size: 29.4px;
-                left: 20px;
+                margin-left: 18px;
                 padding: 15px;
                 margin-top: 20px;
               "
@@ -33,6 +30,7 @@
               type="email"
               placeholder="E-posta"
               dense
+              class="my-custom-input"
               style="padding: 15px; width: 400px; height: 55px; font-size: 17px"
             ></q-input>
 
@@ -44,7 +42,25 @@
               dense
               style="padding: 15px; width: 400px; height: 55px; font-size: 16px"
             ></q-input>
-
+            <div style="width: 304px; height: 78px; margin-left: 20px; margin-top: 40px; ">
+              <iframe
+                title="reCAPTCHA"
+                width="304"
+                height="78"
+                role="presentation"
+                name="a-kr01n4ufv4sb"
+                frameborder="0"
+                scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfaz6oaAAAAAFl8-H1AKIpOuFhOvOFOaEAoJqrL&amp;co=aHR0cHM6Ly93d3cua2FodmVkdW55YXNpLmNvbTo0NDM.&amp;hl=tr&amp;v=cwQvQhsy4_nYdnSDY4u7O5_B&amp;size=normal&amp;cb=sa5g6vjzbr09"
+              ></iframe>
+              <textarea
+                id="g-recaptcha-response"
+                name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="resize: none; display: none"
+              ></textarea>
+            </div>
             <q-btn
               type="submit"
               label="Giriş Yap"
@@ -52,21 +68,13 @@
               dense
               block
               style="
-              left: 18px;
+                left: 18px;
                 padding: 15px;
                 width: 370px;
                 height: 70px;
-                top: 90px;
+                top: 30px;
                 background-color: #005e5c !important;
               "
-            ></q-btn>
-
-            <q-btn
-              @click="showCaptcha"
-              color="positive"
-              label="Ben robot değilim"
-              icon="check_circle"
-              style="bottom: 26px; left: 15px;"
             ></q-btn>
           </q-form>
         </q-card-section>
@@ -77,8 +85,8 @@
             class="text-primary"
             style="
               position: absolute;
-              top: 215px;
-              left: 5px;
+              top: 185px;
+              left: 23px;
               padding: 15px;
               font-size: 13px;
               color: #3596b5 !important;
@@ -93,7 +101,7 @@
           style="
             text-align: center;
             position: absolute;
-            margin-top: -220px;
+            margin-top: -170px;
             margin-left: 135px;
             font-family: Gotham-Book, sans-serif;
             font-size: 15px;
@@ -108,7 +116,7 @@
             class="text-primary"
             style="
               position: absolute;
-              margin-top: -434px;
+              margin-top: -334px;
               left: 223px;
               padding: 15px;
               color: #3596b5 !important;
@@ -158,7 +166,7 @@ export default {
 
 <style scoped>
 .login-page {
-  height: 800px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,11 +177,11 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/images/resim.jpg');
+  background-image: url('../assets/images/banner-bean-desktop.jpg');
   filter: contrast(150%);
   background-size: cover;
   z-index: -1;
-  opacity: 0.5; /* İstediğiniz opaklık seviyesini ayarlayabilirsiniz */
+  opacity: 0.6; /* İstediğiniz opaklık seviyesini ayarlayabilirsiniz */
 }
 .login-card {
   max-width: 1000px;
