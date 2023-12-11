@@ -52,8 +52,9 @@
               dense
               block
               style="
+              left: 18px;
                 padding: 15px;
-                width: 400px;
+                width: 370px;
                 height: 70px;
                 top: 90px;
                 background-color: #005e5c !important;
@@ -65,7 +66,7 @@
               color="positive"
               label="Ben robot değilim"
               icon="check_circle"
-              style="bottom: 24px;"
+              style="bottom: 26px; left: 15px;"
             ></q-btn>
           </q-form>
         </q-card-section>
