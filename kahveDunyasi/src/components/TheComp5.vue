@@ -21,20 +21,23 @@
     Kurumsal firmalara özel fiyat avantajlarıyla, birbirinden farklı Kahve
     Dünyası <br />
     lezzetleri hakkında bilgi almak için çikolata kataloğumuza
-    <a href="#" class="link"> buradan</a>, kahve <br />
-    kataloğumuza <a href="#" class="link"> buradan</a> göz atabilirsiniz. Özel
+     <a href="#" class="link" style="color: #3596B5;"> buradan</a>, kahve <br />
+    kataloğumuza <a href="#" class="link" style="color:#3596B5 ;"> buradan</a> göz atabilirsiniz.
+     Özel
     günler ve bayramlarda, <br />
     müşterilerinizi veya çalışanlarınızı mutlu edecek hediye alternatiflerini
     size <br />
     anlatabilmemiz için aşağıdaki formu doldurarak bize ulaşabilirsiniz.
   </p>
 
-  <div class="q-flex q-pa-md">
+ 
+  <div class="q-flex q-pa-md my-section">
     <div
       class="q-gutter-y-md column"
-      style="display: block; margin: auto; max-width: 50%"
+      style="display: block; margin: auto; width: 546px;; height:76 ;"
     >
       <q-input
+      style="width: 546px;"
         outlined
         v-model="name"
         label="İsim"
@@ -72,25 +75,36 @@
       <q-checkbox
         v-model="specialBox"
         val="teal"
-        label=" Özel kutu tasarımı istiyorum."
         color="teal"
-      ></q-checkbox>
+      >
+      <strong style="font-family:Gotham-Medium, sans-serif; font-size: 13px;" > Özel kutu tasarımı istiyorum. </strong>
+    </q-checkbox>
     </div>
   </div>
 
-  <div class="special-request" style="">
+  <div class="special-request my-section" >
     <p
       class="special-request-text"
       style="
+      
+      margin: auto;
+       max-width: 50% ;
         text-align: center;
-        width: 700px;
-        height: 45px;
-        margin: auto;
-        margin-bottom: 15px;
+        display : block;
+font-size : 14px;
+height : 46.8px;
+padding : 15px;
+width : 550px;
+bottom: 18px;
+      padding-top: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
         font-size: 16px;
         background-color: #f7f8f9;
         font-family: Gotham-Book, sans-serif;
         color: black !important;
+        position:relative;
       "
     >
       Özel kutu tasarım isteği minimum 1.000 adet olan siparişlerde geçerlidir.
@@ -104,34 +118,34 @@
       id="mesaj"
       cols="58"
       rows="8"
-      style="width: 41%"
+      style="width: 546px
+      height: 196px;
+      "
       v-model="message"
       @input="updateCharacterCount"
     ></textarea>
   </div>
 
-  <p style="margin-left: 380px">
-    <a href="" style="text-decoration: none; color: black">
-      {{ remainingCharacters }} karakter kaldı
-    </a>
-  </p>
-
+  <p class="character-counter">
+  <a href="" style="text-decoration: none; color: black; margin-left: 390px; ">{{ remainingCharacters }} karakter kaldı</a>
+</p>
   <div
     class="checkbox-container"
     style="display: flex; align-items: center; justify-content: center"
   >
-    <q-checkbox
-      v-model="dataProcessingConsent"
-      val="teal"
-      color="teal"
-      label="Kişisel verilerimin aydınlatma metninde belirtilen işleme amaçlarıyla 
-      sınırlı olmak üzere yurtdışına aktarılmasına açık rızamla kabul ediyorum."
-      style="margin-right: 10px"
-      :ripple="true"
-      true-value="true"
-      false-value="false"
-      class="bold-text"
-    ></q-checkbox>
+  <q-checkbox
+  v-model="dataProcessingConsent"
+  val="teal"
+  color="teal"
+  style="white-space: normal; display:flex; padding: 15px;"
+  :ripple="true"
+  true-value="true"
+  false-value="false"
+  class="bold-text"
+>
+ <strong style="font-family: Gotham-Medium, sans-serif; font-size: 13px;" > Kişisel verilerimin aydınlatma metninde belirtilen işleme amaçlarıyla 
+sınırlı <br> olmak üzere yurtdışına aktarılmasına açık rızamla kabul ediyorum. </strong>
+</q-checkbox>
 
     <span
       class="checkbox-label"
@@ -145,25 +159,48 @@
     ></span>
   </div>
 
-  <div class="special-request2" style="">
+  <div class="special-request2 my-section">
     <p
       class="special-request2-text"
       style="
+      
         text-align: center;
-        width: 700px;
+        width: 550px;
         height: 45px;
         margin: auto;
         margin-bottom: 15px;
+      
         font-size: 16px;
         background-color: #f7f8f9;
         font-family: Gotham-Book, sans-serif;
         color: black !important;
       "
     >
-      Bu sayfadaki bilgiler sizinle iletişime geçebilmek için alınmaktadır. "Kişisel <br>
-      Verilerin Korunması Kanunu Aydınlatma Metni"ni buradan okuyabilirsiniz.
+      Bu sayfadaki bilgiler sizinle iletişime geçebilmek için alınmaktadır. "Kişisel <br> verilerin Korunması Kanunu Aydınlatma Metni"ni <a href="" style="color: #3596B5;">buradan </a> okuyabilirsiniz.
     </p>
   </div>
+  <div style="display: flex; justify-content: center; align-items: center; margin-right: 230px;  padding-bottom: 40px;">
+ 
+  <div style="width: 304px; height: 78px;   ">
+              <iframe
+                title="reCAPTCHA"
+                width="304"
+                height="78"
+                role="presentation"
+                name="a-kr01n4ufv4sb"
+                frameborder="0"
+                scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfaz6oaAAAAAFl8-H1AKIpOuFhOvOFOaEAoJqrL&amp;co=aHR0cHM6Ly93d3cua2FodmVkdW55YXNpLmNvbTo0NDM.&amp;hl=tr&amp;v=cwQvQhsy4_nYdnSDY4u7O5_B&amp;size=normal&amp;cb=sa5g6vjzbr09"
+              ></iframe>
+              <textarea
+                id="g-recaptcha-response"
+                name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="resize: none; display: none"
+              ></textarea>
+            </div>
+          </div>
   <q-btn
     type="submit"
     label="GÖNDER"
@@ -171,11 +208,17 @@
     dense
     block
     style="
+    display : block;
+font-size : 14px;
+    margin: auto;
+       max-width: 50% ;
+        text-align: center;
+        display : block;
       padding: 15px;
-      width: 400px;
-      height: 70px;
-      top: 10px;
-      left: 400px;
+      width: 550px;
+      height: 80px;
+
+      margin-bottom: 30px;
       text-align: center;
       background-color: #005e5c !important;
     "
@@ -186,11 +229,7 @@
 export default {
   data() {
     return {
-      name: "",
-      surname: "",
-      phone: "",
-      email: "",
-      companyName: "",
+    
       specialBox: false,
       message: "",
       dataProcessingConsent: false,
@@ -219,6 +258,7 @@ export default {
   text-align: center;
   overflow: hidden;
 }
+
   .header-background {
     position: absolute;
     top: 0;
@@ -247,5 +287,10 @@ export default {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .my-section {
+  margin-bottom: 20px;
+}
+
+
 
 </style>
